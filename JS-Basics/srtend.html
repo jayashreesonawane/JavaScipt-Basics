@@ -1,0 +1,33 @@
+<!-- to check whether a string starts and ends with certain characters -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start & end with character</title>
+</head>
+<body>
+    <script>
+        var string = prompt("enter a string");
+        console.log("given string :"+string);
+        var testStart = string.startsWith('w');
+        var testEnd = string.endsWith('e');
+        if(testStart == true && testEnd == true)
+        {
+            console.log("starts with w and ends with e");
+        }
+        else if(testStart == true && testEnd == false)
+        {
+            console.log("starts with w");
+        }
+        else if(testStart == false && testEnd == true){
+            console.log("end with e");
+        }
+        else{
+            console.log("Not starts with w and e");
+        }
+    </script>
+</body>
+</html>

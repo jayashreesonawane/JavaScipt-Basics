@@ -1,0 +1,44 @@
+<!-- calculator using switch case -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt("Enter 1st no.");
+        var num2 = prompt("Enter 2nd no.");
+        var opr = prompt("Select among +,-,*,/");
+
+        switch(opr)
+        {
+            case "+":
+                var res = parseFloat(num1) + parseFloat(num2);
+                console.log("Addition : "+res);
+                break;
+
+            case "-":
+                var res = parseFloat(num1) - parseFloat(num2);
+                console.log("Subtraction : "+res);
+                break;
+
+            case "*":
+                var res = parseFloat(num1) * parseFloat(num2);
+                console.log("Multiplication : "+res);
+                break;
+
+            case "/":
+                var res = parseFloat(num1) / parseFloat(num2);
+                console.log("Division : "+res);
+                break;
+
+            default:
+                console.log("Invallid");
+        }
+    </script>
+</body>
+</html>

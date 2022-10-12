@@ -1,0 +1,34 @@
+<!-- find largest among three numbers -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest of 3</title>
+</head>
+<body>
+    <script>
+        function check(p,q,r){
+            if(p>=q && p>=r)
+            {
+                return p;
+            }
+            else if(q>=p && q>=r)
+            {
+                return q;
+            }
+            else{
+                return r;
+            }
+        }
+        var a = prompt("enter first :");
+        var b = prompt("enter second :");
+        var c = prompt("enter three :");
+        // var x = Math.max(a,b,c);
+        var x = check(a,b,c);
+        console.log("largest",x);
+    </script>
+</body>
+</html>

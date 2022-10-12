@@ -1,0 +1,29 @@
+<!-- area of triangle -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Triangle</title>
+</head>
+<body>
+    <script>
+        var base = prompt("Enter base:");
+        var height = prompt("Enter height:");
+        var area = (base * height) / 2;
+        console.log(area);
+
+        // area of regular triangular ny herons formula
+
+        var a = 10;
+        var b = 10;
+        var c = 10;
+        var s = (a+b+c)/2;
+        var temp = s*(s-a)*(s-b)*(s-c);
+        var are = Math.sqrt(temp);
+        console.log(are);
+    </script>
+</body>
+</html>

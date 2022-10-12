@@ -1,0 +1,27 @@
+<!-- check Palindrome using Array methods -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number</title>
+</head>
+<body>
+    <script>
+        var string = prompt("Enter string");
+        var stringArray = string.split('');
+        var stringArrayRev = stringArray.reverse();
+        var revString = stringArrayRev.join('');
+        if(string === revString)
+        {
+            console.log("Palindrome");
+        }
+        else{
+            console.log("Not Palindrome");
+        }
+
+    </script>
+</body>
+</html>

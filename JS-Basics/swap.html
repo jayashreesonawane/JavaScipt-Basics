@@ -1,0 +1,31 @@
+<!-- swap two numbers using and without using temporary variable -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapping of two numbers</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Enter first no. :");
+        var b = prompt("Enter second no. :");
+        var temp;
+        temp = a;
+        a = b;
+        b = temp;
+        console.log("a : "+a+ "b : "+b);
+
+        // without using temporary variable
+        let c =5;
+        let d =6;
+        c = parseInt(c) + parseInt(d);
+        d = parseInt(c) - parseInt(d);
+        c = parseInt(c) - parseInt(d);
+        console.log("c : "+c+"d : "+d);
+
+    </script>
+</body>
+</html>
